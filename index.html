@@ -5,25 +5,18 @@
       <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
   <meta name="description" content="A growing collection of ready to use components for the CSS framework Bootstrap 5">
-  <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon.png">
   <meta name="author" content="Holger Koenemann">
   <meta name="generator" content="Eleventy v2.0.0">
   <meta name="HandheldFriendly" content="true">
-  <title>Frontpage one</title>
+  <title>Stride HTML Template - Frontpage one</title>
   <link rel="stylesheet" href="css/theme.min.css">
 
    <style>
 
-/* inter-200 - latin */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 200;
-  font-display: swap;
-  src: local(''),
-       url('../fonts/inter-v11-latin-200.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/inter-v11-latin-200.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
 /* inter-300 - latin */
 @font-face {
   font-family: 'Inter';
@@ -31,28 +24,27 @@
   font-weight: 300;
   font-display: swap;
   src: local(''),
-       url('../fonts/inter-v11-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/inter-v11-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('./fonts/inter-v12-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('./fonts/inter-v12-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-/* inter-regular - latin */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local(''),
-       url('../fonts/inter-v11-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/inter-v11-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* inter-500 - latin */
+
 @font-face {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
   font-display: swap;
   src: local(''),
-       url('../fonts/inter-v11-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/inter-v11-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('./fonts/inter-v12-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('./fonts/inter-v12-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local(''),
+       url('./fonts/inter-v12-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('./fonts/inter-v12-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 </style>
@@ -63,11 +55,11 @@
 
     <nav id="navScroll" class="navbar navbar-expand-lg navbar-light fixed-top" tabindex="0">
   <div class="container">
-    <a class="navbar-brand pe-4 fs-3 border-end" href="/">
+    <a class="navbar-brand pe-4 fs-4" href="/">
   <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-layers-half" viewbox="0 0 16 16">
     <path d="M8.235 1.559a.5.5 0 0 0-.47 0l-7.5 4a.5.5 0 0 0 0 .882L3.188 8 .264 9.559a.5.5 0 0 0 0 .882l7.5 4a.5.5 0 0 0 .47 0l7.5-4a.5.5 0 0 0 0-.882L12.813 8l2.922-1.559a.5.5 0 0 0 0-.882l-7.5-4zM8 9.433 1.562 6 8 2.567 14.438 6 8 9.433z"/>
   </svg>
-  <span class="ms-1 fw-bold">Stride</span>
+  <span class="ms-1 fw-bolder">Stride</span>
 </a>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -107,12 +99,13 @@
   </li>
 
     </ul>
-      <a href="#" aria-label="Link to the customers profil page" class="link-dark bg-white-95 p-2">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person" viewbox="0 0 16 16">
-          <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
-        </svg>
-        <span class="d-none">Profil</span>
+      <a href="https://templatedeck.com" data-splitbee-event="Click Download" aria-label="Download this template" class="link-dark pb-1 link-fancy me-2">
+        Download this Template       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download ms-1" viewBox="0 0 16 16">
+                <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+              </svg>
       </a>
+
     </div>
 </div>
 </nav>
@@ -121,7 +114,7 @@
       <div class="w-100 overflow-hidden bg-gray-100" id="top">
   
 <div class="container position-relative">
-  <div class="col-12 col-lg-8 mt-0 h-100 position-absolute top-0 end-0 bg-cover" data-aos="fade-left" style="background-image: url(img/interior11.jpg);">
+  <div class="col-12 col-lg-8 mt-0 h-100 position-absolute top-0 end-0 bg-cover" data-aos="fade-left" style="background-image: url(img/webp/interior11.webp);">
     
   </div>
     <div class="row">
@@ -180,15 +173,15 @@
   <div class="col-lg-6">
   <div class="row gx-5 d-flex">
     <div class="col-md-11">
-      <div class="shadow ratio ratio-16x9 rounded bg-cover bp-center align-self-end" data-aos="fade-right" style="background-image: url(img/people15.jpg);--bs-aspect-ratio: 50%;">
+      <div class="shadow ratio ratio-16x9 rounded bg-cover bp-center align-self-end" data-aos="fade-right" style="background-image: url(img/webp/people15.webp);--bs-aspect-ratio: 50%;">
       </div>
     </div>
     <div class="col-md-5 offset-md-1">
-      <div class="shadow ratio ratio-1x1 rounded bg-cover mt-5 bp-center float-end" data-aos="fade-up" style="background-image: url(img/interior42.jpg);">
+      <div class="shadow ratio ratio-1x1 rounded bg-cover mt-5 bp-center float-end" data-aos="fade-up" style="background-image: url(img/webp/interior42.webp);">
       </div>
     </div>
     <div class="col-md-6">
-      <div class="col-12 shadow ratio rounded bg-cover mt-5 bp-center" data-aos="fade-left" style="background-image: url(img/people4.jpg);--bs-aspect-ratio: 150%;">
+      <div class="col-12 shadow ratio rounded bg-cover mt-5 bp-center" data-aos="fade-left" style="background-image: url(img/webp/people4.webp);--bs-aspect-ratio: 150%;">
       </div>
     </div>
   </div>
@@ -239,23 +232,23 @@
     <div class="col-12">
       <div class="row vw-100 px-0 py-vh-5 d-flex align-items-center scrollx">
         <div class="col-md-2" data-aos="fade-up">
-            <img src="img/interior37.jpg" class="rounded shadow img-fluid" alt="nice gallery image" width="512" height="341">
+            <img src="img/webp/interior37.webp" class="rounded shadow img-fluid" alt="nice gallery image" width="512" height="341">
         </div>
 
         <div class="col-md-2" data-aos="fade-up" data-aos-delay="200">
-            <img src="img/people1.jpg" class="img-fluid rounded shadow" alt="nice gallery image" width="1164" height="776">
+            <img src="img/webp/people1.webp" class="img-fluid rounded shadow" alt="nice gallery image" width="1164" height="776">
         </div>
 
         <div class="col-md-3" data-aos="fade-up" data-aos-delay="400">
-            <img src="img/people2.jpg" class="img-fluid rounded shadow" alt="nice gallery image" width="844" height="1054">
+            <img src="img/webp/people2.webp" class="img-fluid rounded shadow" alt="nice gallery image" width="844" height="1054">
         </div>
 
         <div class="col-md-3" data-aos="fade-up" data-aos-delay="600">
-            <img src="img/interior29.jpg" class="img-fluid rounded shadow" alt="nice gallery image" width="844" height="562">
+            <img src="img/webp/interior29.webp" class="img-fluid rounded shadow" alt="nice gallery image" width="844" height="562">
         </div>
 
         <div class="col-md-2" data-aos="fade-up" data-aos-delay="800">
-            <img src="img/people23.jpg" class="rounded shadow img-fluid" alt="nice gallery image" width="512" height="341">
+            <img src="img/webp/people23.webp" class="rounded shadow img-fluid" alt="nice gallery image" width="512" height="341">
         </div>
       </div>
     </div>
@@ -273,7 +266,7 @@
   <blockquote>
     <div class="fs-4 my-3 fw-light pt-4 border-bottom pb-3">“I´am the CEO of this company. So maybe you think "he will tell us something super awesome about it only". But no. Its a really strange place to work with creepy people all around.
       They do some computer stuff I don´t understand. But I wear expensive Glasses and a Patagonia Hoodie. So I´am fine with it.”</div>
-    <img src="img/person11.jpg" width="64" height="64" class="img-fluid rounded-circle me-3" alt="" data-aos="fade">
+    <img src="img/webp/person11.webp" width="64" height="64" class="img-fluid rounded-circle me-3" alt="" data-aos="fade">
     <span><span class="fw-bold">John Doe,</span>
       CEO of Stride Ltd.</span>
   </blockquote>
@@ -340,7 +333,7 @@
               <span class="h6 fw-5">Jane Doemunsky</span><br>
               <small class="text-muted">COO, The Boo Corp.</small>
             </div>
-            <img src="img/person9.jpg" width="48" height="48" class="rounded-circle" alt="" data-aos="fade">
+            <img src="img/webp/person9.webp" width="48" height="48" class="rounded-circle" alt="" data-aos="fade">
           </div>
         </div>
       </div>
@@ -377,7 +370,7 @@
               <span class="h6 fw-5">Jenny Matrix</span><br>
               <small class="text-muted">Daughter of Col. John Matrix, Commando.</small>
             </p>
-            <img src="img/person3.jpg" width="48" height="48" class="rounded-circle" alt="" data-aos="fade">
+            <img src="img/webp/person3.webp" width="48" height="48" class="rounded-circle" alt="" data-aos="fade">
           </div>
         </div>
       </div>
@@ -412,7 +405,7 @@
               <span class="h6 fw-5">Rustin Cohle</span><br>
               <small class="text-muted">Detective, Somewhere in the swamps</small>
             </p>
-            <img src="img/person8.jpg" width="48" height="48" class="rounded-circle" alt="" data-aos="fade">
+            <img src="img/webp/person8.webp" width="48" height="48" class="rounded-circle" alt="" data-aos="fade">
           </div>
         </div>
       </div>
@@ -448,7 +441,7 @@
               <span class="h6 fw-5">Richard Thornburg</span><br>
               <small class="text-muted">News Reporter, KFLW-TV</small>
             </p>
-            <img src="img/person14.jpg" width="48" height="48" class="rounded-circle" alt="" data-aos="fade">
+            <img src="img/webp/person14.webp" width="48" height="48" class="rounded-circle" alt="" data-aos="fade">
           </div>
         </div>
       </div>
@@ -485,7 +478,7 @@
               <span class="h6 fw-5">Harry Walters</span><br>
               <small class="text-muted">Gangster, In Bruges</small>
             </p>
-            <img src="img/person13.jpg" width="48" height="48" class="rounded-circle" alt="" data-aos="fade">
+            <img src="img/webp/person13.webp" width="48" height="48" class="rounded-circle" alt="" data-aos="fade">
           </div>
         </div>
       </div>
@@ -523,7 +516,7 @@
               <span class="h6 fw-5">Lizzie Stark</span><br>
               <small class="text-muted">Head of Security, Brummagem Boys</small>
             </p>
-            <img src="img/person18.jpg" width="48" height="48" class="rounded-circle" alt="" data-aos="fade">
+            <img src="img/webp/person18.webp" width="48" height="48" class="rounded-circle" alt="" data-aos="fade">
           </div>
         </div>
       </div>
@@ -671,20 +664,19 @@
   </ul>
 </div>
 <div class="col-12 col-lg-6 col-xl-3 p-5">
-  <h3 class="h6 mb-3">Support</h3>
+  <h3 class="h6 mb-3">Subpages</h3>
   <ul class="nav flex-column">
     <li class="nav-item">
-      <a class="nav-link link-secondary ps-0" aria-current="page" href="#">Contact</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link link-secondary ps-0" href="#">FAQ</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link link-secondary ps-0" href="#">Support Center</a>
+      <a class="nav-link link-secondary ps-0" aria-current="page" href="404.html">404 System Page</a>
+      <a class="nav-link link-secondary ps-0" aria-current="page" href="register.html">Register System Page</a>
+            <a class="nav-link link-secondary ps-0" aria-current="page" href="content.html">Simple Text Content Page</a>
     </li>
   </ul>
 </div>
 </div>
+</div>
+
+<div class="container text-center py-3 small">Made by <a href="https://templatedeck.com" class="link-fancy" target="_blank">templatedeck.com</a>
 </div>
 </footer>
 

@@ -8945,6 +8945,11 @@ img {
   background-color: #fff;
   padding: 10px; }
 
+.blockquote-xl {
+  font-size: calc(1em + 1vw);
+  font-style: italic;
+  font-weight: bolder; }
+
 .btn-xl {
   --bs-btn-padding-y: calc(1rem + .3vh);
   --bs-btn-padding-x: calc(1rem + 1.4vw);
@@ -9136,6 +9141,10 @@ img {
 
 .transform-scale:hover {
   transform: scale(1.5, 1.5); }
+
+.px-vw-5 {
+  padding-left: 8vw;
+  padding-right: 8vw; }
 
 .vh-10 {
   height: 10vh; }
