@@ -1,0 +1,1446 @@
+<!doctype html>
+<html class="h-100" lang="en">
+
+  <head>
+      <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+  <meta name="description" content="A growing collection of ready to use components for the CSS framework Bootstrap 5">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="96x96" href=".t/img/favicon.png">
+  <meta name="author" content="Holger Koenemann">
+  <meta name="generator" content="Eleventy v2.0.0">
+  <meta name="HandheldFriendly" content="true">
+  <title>Kitchensink</title>
+  <link rel="stylesheet" href="css/theme.min.css">
+
+   <style>
+
+/* inter-300 - latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local(''),
+       url('./fonts/inter-v12-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('./fonts/inter-v12-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local(''),
+       url('./fonts/inter-v12-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('./fonts/inter-v12-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local(''),
+       url('./fonts/inter-v12-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('./fonts/inter-v12-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+</style>
+
+  </head>
+
+  <body data-bs-spy="scroll" data-bs-target="#navScroll">
+
+    <nav id="navScroll" class="navbar navbar-expand-lg navbar-light" tabindex="0">
+  <div class="container">
+    <a class="navbar-brand pe-4 fs-4" href="/">
+  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-layers-half" viewbox="0 0 16 16">
+    <path d="M8.235 1.559a.5.5 0 0 0-.47 0l-7.5 4a.5.5 0 0 0 0 .882L3.188 8 .264 9.559a.5.5 0 0 0 0 .882l7.5 4a.5.5 0 0 0 .47 0l7.5-4a.5.5 0 0 0 0-.882L12.813 8l2.922-1.559a.5.5 0 0 0 0-.882l-7.5-4zM8 9.433 1.562 6 8 2.567 14.438 6 8 9.433z"/>
+  </svg>
+  <span class="ms-1 fw-bolder">Stride</span>
+</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+    <a class="nav-link" href="#services" aria-label="Brings you to the frontpage">
+      Services
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#aboutus">
+      About us
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#numbers">
+      Numbers
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#gallery">
+      Gallery
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#workwithus">
+      Work with us
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#testimonials">
+      Testimonials
+    </a>
+  </li>
+
+    </ul>
+      <a href="https://templatedeck.com/stride-html-template.html" data-splitbee-event="Click Download" aria-label="Download this template" class="link-dark pb-1 link-fancy me-2">
+        Download this Template       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download ms-1" viewBox="0 0 16 16">
+                <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+              </svg>
+      </a>
+
+    </div>
+</div>
+</nav>
+
+    <main>
+      <div class="wrapper bg-light py-vh-5">
+<div class="container">
+  <div class="row d-flex justify-content-center">
+      <div class="col-12 col-xl-8 text-center">
+  <div class="text-primary">
+    <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" fill="currentColor" class="bi bi-shield-check" viewbox="0 0 16 16">
+      <path d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z"/>
+      <path d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+    </svg>
+  </div>
+  <h1 class="fw-bold display-1">A hero at work</h1>
+  <p class="lead mb-3">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+  <a href="#" class="btn btn-primary px-5 py-3 shadow me-1">Start for free</a>
+  <a href="#" class="btn btn-light px-5 py-3 ms-1">See Demo</a>
+</div>
+
+  </div>
+</div>
+</div>
+
+<div class="container">
+  <div class="row py-vh-4">
+      <div class="position-relative">
+  <div class="container">
+    <div class="row">
+<div class="col-lg-5 py-vh-4" data-aos="fade-right">
+  <span class="fs-5 text-primary">We know what we do</span>
+  <h1 class="display-1 fw-bold">Sell more, sell faster!</h1>
+  <p class="lead">To be honest, this is just a stupid placeholder text. We don´t know how to sell anything, not even less or slow.</p>
+  <a href="#" class="btn btn-primary btn-xl shadow me-3 rounded-pill">Get started free</a>
+  <span class="fs-1 text-primary">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-play-circle mt-2" viewbox="0 0 16 16">
+      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+      <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
+    </svg>
+  </span>
+  <a href="index.html" aria-label="Click to open up video player window" class="text-primary">Play video</a>
+</div>
+<div class="col-lg-6 mt-4 mt-lg-0 h-100 position-absolute top-0 end-0 rounded-start bg-cover shadow" data-aos="fade-up" style="background-image: url(img/office13.jpg);">
+
+</div>
+</div>
+
+</div>
+</div>
+
+  </div>
+  <div class="row py-vh-4">
+      <div class="col-lg-6 col-xl-6">
+  <span class="fs-5">Lorem ipsum dolor</span>
+  <h1 class="display-2 fw-bold">Reliable API´s at your service</h1>
+  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+  <a href="#" class="btn btn-primary btn-xl rounded-pill shadow me-3">Get started free</a>
+
+</div>
+
+<div class="col-lg-6 mt-4 mt-lg-0 position-relative">
+  <div class="col p-0 border rounded-top shadow">
+  <div class="col-12 border-bottom rounded-top p-3">
+    <span class="text-danger">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-fill" viewbox="0 0 16 16">
+        <circle cx="8" cy="8" r="8"/>
+      </svg>
+    </span>
+    <span class="text-warning mx-1">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-fill" viewbox="0 0 16 16">
+        <circle cx="8" cy="8" r="8"/>
+      </svg>
+    </span>
+    <span class="text-success">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-fill" viewbox="0 0 16 16">
+        <circle cx="8" cy="8" r="8"/>
+      </svg>
+    </span>
+  </div>
+  <div class="col p-4 rounded-bottom">
+    <code>
+      <span class="text-muted">// Vertical padding relative to the viewport height</span><br>
+      <span class="text-success">.py-vh-1 {</span><br>
+      <span class="ms-3">padding-top:
+        <span class="text-primary">1.5vh;</span></span><br>
+      <span class="ms-3">padding-bottom:
+        <span class="text-primary">1.5vh;</span></span><br>
+      <span class="text-success">}</span><br>
+      <br>
+      <span class="text-success">.py-vh-2 {</span><br>
+      <span class="ms-3">padding-top:
+        <span class="text-primary">3vh;</span></span><br>
+      <span class="ms-3">padding-bottom:
+        <span class="text-primary">3vh;</span></span><br>
+      <span class="text-success">}</span>      <br>
+      <br>
+      <span class="text-success">.py-vh-3 {</span><br>
+      <span class="ms-3">padding-top:
+        <span class="text-primary">6vh;</span></span><br>
+      <span class="ms-3">padding-bottom:
+        <span class="text-primary">6vh;</span></span><br>
+      <span class="text-success">}</span>      <br>
+      <br>
+    </code>
+  </div>
+</div>
+
+</div>
+
+  </div>
+  <div class="py-vh-4">
+      
+<div class="position-relative bg-primary bg-cover bp-center" style="background-image: url(/img/7d8cd274-1280.jpeg);">
+<div class="position-absolute w-100 h-100 opacity-75 bg-dark"></div>
+  <div class="container">
+    <div class="row py-vh-5 position-relative d-flex justify-content-between align-items-center">
+      <div class="col-lg-6 text-white">
+        <h1 class="display-3 fw-bold">Join us today and start earning money</h1>
+        <p class="lead border-bottom border-white pb-4">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
+        <span class="fs-1 display-1 fw-bold">4.6</span>
+        <span class="fs-6 fw-light">Average Rating von Amazon</span>
+          <div class="text-warning mt-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-star-fill" viewbox="0 0 20 20">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-star-fill" viewbox="0 0 20 20">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-star-fill" viewbox="0 0 20 20">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-star-fill" viewbox="0 0 20 20">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-star-half" viewBox="0 0 20 20">
+              <path d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z"/>
+            </svg>
+          </div>
+
+      </div>
+      <div class="col-6">
+        <div class="col-12 border p-5 bg-white rounded shadow">
+  <h2 class="fw-bold display-5 mb-4">Join the best!</h2>
+  <div class="col-12">
+    <div class="form-floating mb-3">
+      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+      <label for="floatingInput">Email address</label>
+    </div>
+    <div class="form-floating mb-3">
+      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+      <label for="floatingPassword">Password</label>
+    </div>
+    <div class="form-floating">
+      <input type="password" class="form-control" id="floatingPasswordretype" placeholder="Password Retype">
+      <label for="floatingPassword">Password Retype</label>
+    </div>
+    <div class="d-grid">
+      <button class="btn btn-primary btn-lg mt-4 btn-xl fw-light" type="button">
+        Join now!</button>
+    </div>
+
+    <div class="text-center pt-4 mt-4 border-top">
+      <p>Already have an account?
+        <a href="#" class="link-primary">Log in</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+  <div class="py-vh-4">
+      <div class="position-relative bg-primary bg-cover bp-center" style="background-image: url(/img/b3a3ee2e-1024.jpeg);">
+<div class="position-absolute w-100 h-100 opacity-75 bg-primary"></div>
+  <div class="container">
+    <div class="row py-vh-5 position-relative d-flex justify-content-between align-items-center">
+      <div class="col-lg-5 text-white">
+        <h1 class="display-1 fw-bold">Sell more, sell faster!</h1>
+        <p class="lead">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+
+      </div>
+      <div class="col-6">
+        <div class="col-12 border p-5 bg-white rounded shadow">
+  <h2 class="fw-bold display-5 mb-4">Join the best!</h2>
+  <div class="col-12">
+    <div class="form-floating mb-3">
+      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+      <label for="floatingInput">Email address</label>
+    </div>
+    <div class="form-floating mb-3">
+      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+      <label for="floatingPassword">Password</label>
+    </div>
+    <div class="form-floating">
+      <input type="password" class="form-control" id="floatingPasswordretype" placeholder="Password Retype">
+      <label for="floatingPassword">Password Retype</label>
+    </div>
+    <div class="d-grid">
+      <button class="btn btn-primary btn-lg mt-4 btn-xl fw-light" type="button">
+        Join now!</button>
+    </div>
+
+    <div class="text-center pt-4 mt-4 border-top">
+      <p>Already have an account?
+        <a href="#" class="link-primary">Log in</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+  <div class="row py-vh-4">
+      <div class="position-relative">
+  <div class="position-absolute w-50 h-100 bg-light bg-cover bp-center end-0 rounded-start" style="background-image: url(/img/9185c952-1680.jpeg);"></div>
+  <div class="container">
+    <div class="row py-vh-5 position-relative d-flex justify-content-between align-items-center">
+      <div class="col-lg-5">
+        <span class="fs-5">Lorem ipsum dolor</span>
+        <h1 class="display-1 fw-bold">Work like you live</h1>
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+        <a href="#" class="btn btn-primary btn-xl rounded-pill shadow me-3">Get started free</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+  <div class="row py-vh-4">
+      <div class="position-relative">
+  <div class="position-absolute w-50 h-100 bg-light bg-cover bp-center end-0 rounded-start" style="background-image: url(/img/b7648a9a-1920.jpeg);"></div>
+  <div class="container">
+    <div class="row py-vh-5 position-relative d-flex justify-content-between align-items-center">
+      <div class="col-lg-5">
+        <span class="fs-5 text-primary">Lorem ipsum dolor</span>
+        <h1 class="display-1 fw-bold">Work like you live</h1>
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+        <a href="#" class="btn btn-primary btn-xl rounded-pill shadow me-3">Get started free</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+  <div class="row py-vh-4">
+      <div class="position-relative bg-cover text-white text-center py-vh-5" style="background-image: url(/img/363e7da2-1024.jpeg);">
+  <div class="opacity-75 bg-black position-absolute w-100 h-100 top-0 start-0"></div>
+  <div class="container">
+    <div class="row py-vh-5 position-relative d-flex justify-content-center align-items-center">
+      <div class="col-10 mt-5">
+        <span class="fs-5">Lorem ipsum dolor</span>
+        <h1 class="display-1 fw-bold">Work like you live</h1>
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+        <a href="#" class="btn btn-light btn-xl rounded-pill shadow me-3">Get started free</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+  <div class="row py-vh-4">
+      <div class="position-relative bg-cover text-white text-center bp-center" style="background-image: url(/img/7d8cd274-1280.jpeg);">
+  <div class="opacity-50 bg-black position-absolute w-100 h-100 top-0 start-0"></div>
+  <div class="container">
+    <div class="row py-vh-5 position-relative d-flex justify-content-center align-items-center">
+      <div class="col-10 mt-5">
+        <span class="fs-5">Lorem ipsum dolor</span>
+        <h1 class="display-1 fw-bold">Join our community</h1>
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+        <a href="#" class="btn btn-primary btn-xl shadow me-3">Get started free</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+  <div class="row py-vh-4">
+              <div class="row">
+          <div class="col-lg-12 mb-2">
+            <span class="text-primary">Why you can trust us</span>
+            <p class="pt-2 w-light fs-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum dolores ratione quas quia
+              fuga quo est
+              similique quam aperiam voluptatum ducimus dignissimos inventore molestiae neque illum, tenetur
+              repudiandae!</p>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-between align-items-center">
+          <div class="col py-5 text-center">
+            <span class="d-block display-4 lh-1">+7.2%</span>
+            <span class="text-secondary">NPS last year</span>
+          </div>
+          <div class="col py-5 text-center">
+            <span class="d-block display-4 lh-1">840m</span>
+            <span class="text-secondary">revenue</span>
+          </div>
+          <div class="col py-5 text-center">
+            <span class="d-block display-4 lh-1">+122k</span>
+            <span class="text-secondary">new members</span>
+          </div>
+        </div>
+
+  </div>
+  <div class="row py-vh-4">
+      <div class="row d-flex justify-content-end">
+<div class="col-lg-8" data-aos="fade-down"><h2 class="display-6">Okay, there are three really good reasons for us. There are no more than three, but we think three is a reasonable good number of good stuff.</h2></div>
+</div>
+<div class="row d-flex align-items-center">
+<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+  <span class="h5 fw-lighter">01.</span>
+  <h3 class="py-5 border-top border-dark">We rented this fancy startup office in an old factory building.</h3>
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus culpa, voluptatibus ex itaque, sapiente a consequatur inventore beatae, ipsam debitis omnis consequuntur iste asperiores. Similique quisquam debitis corrupti deserunt, dolor.</p>
+  <a href="#" class="link-fancy">Learn more
+  </a>
+</div>
+
+<div class="col-md-6 col-lg-4 py-vh-4 pb-0" data-aos="fade-up" data-aos-delay="400">
+  <span class="h5 fw-lighter">02.</span>
+  <h3 class="py-5 border-top border-dark">We don´t know exactly what we are doing. But thats good because we can´t break something intentionally.</h3>
+  <p>Lorem, ipsum dolor sit  adipisicing elit. Minus culpa, voluptatibus ex itaque, sapiente a consequatur inventore beatae, ipsam debitis omnis consequuntur iste asperiores. Similique quisquam debitis corrupti deserunt, dolor.</p>
+  <a href="#" class="link-fancy">Learn more
+  </a>
+</div>
+
+<div class="col-md-6 col-lg-4 py-vh-6 pb-0" data-aos="fade-up" data-aos-delay="600">
+  <span class="h5 fw-lighter">03.</span>
+  <h3 class="py-5 border-top border-dark">There is no real number three reason. So please read again number one and two.</h3>
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus culpa, voluptatibus ex itaque, sapiente a consequatur inventore beatae, ipsam debitis omnis consequuntur iste asperiores. Similique quisquam debitis corrupti deserunt, dolor.</p>
+  <a href="#" class="link-fancy">Learn more
+  </a>
+</div>
+</div>
+
+  </div>
+  <div class="row py-vh-4">
+      <div class="col-md-6 py-4">
+  <h3 class="fs-2">There are more than just a few reasons to work with us. But let us start...</h3>
+  <p class="lead">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+</div>
+
+<div class="col-md-6">
+  <div class="row">
+    <div class="col-md-6 mb-4 py-4 border-bottom">
+      <h4>
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-check-circle float-start me-2" viewbox="0 0 16 16">
+          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+          <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+        </svg>
+        Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</h4>
+      <p>Adipiscing elit, sed do eiusmod tempor</p>
+    </div>
+    <div class="col-md-6 mb-4 py-4 border-bottom">
+      <h4>
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-check-circle float-start me-2" viewbox="0 0 16 16">
+          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+          <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+        </svg>
+        Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</h4>
+      <p>Adipiscing elit, sed do eiusmod tempor</p>
+    </div>
+    <div class="col-md-6 mb-4 py-4 border-bottom">
+      <h4>
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-check-circle float-start me-2" viewbox="0 0 16 16">
+          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+          <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+        </svg>
+        Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</h4>
+      <p>Adipiscing elit, sed do eiusmod tempor</p>
+    </div>
+    <div class="col-md-6 mb-4 py-4 border-bottom">
+      <h4>
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-check-circle float-start me-2" viewbox="0 0 16 16">
+          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+          <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+        </svg>
+        Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</h4>
+      <p>Adipiscing elit, sed do eiusmod tempor</p>
+    </div>
+  </div>
+</div>
+
+  </div>
+  <div class="row py-vh-4">
+      <div class="col-lg-6">
+<div class="col p-0 border rounded shadow">
+  <div class="col-12 border-bottom bg-light p-3">
+    <span class="text-danger">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-fill" viewbox="0 0 16 16">
+        <circle cx="8" cy="8" r="8"/>
+      </svg>
+    </span>
+    <span class="text-warning mx-1">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-fill" viewbox="0 0 16 16">
+        <circle cx="8" cy="8" r="8"/>
+      </svg>
+    </span>
+    <span class="text-success">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-fill" viewbox="0 0 16 16">
+        <circle cx="8" cy="8" r="8"/>
+      </svg>
+    </span>
+  </div>
+  <div class="col p-4 bg-white">
+    <code>
+      <span class="text-muted">// Vertical padding relative to the viewport height</span><br>
+      <span class="text-dark">.py-vh-1 {</span><br>
+      <span class="ms-3">padding-top:
+        <span class="text-primary">1.5vh;</span></span><br>
+      <span class="ms-3">padding-bottom:
+        <span class="text-primary">1.5vh;</span></span><br>
+      <span class="text-secondary">}</span><br>
+      <br>
+      <span class="text-dark">.py-vh-2 {</span><br>
+      <span class="ms-3">padding-top:
+        <span class="text-primary">3vh;</span></span><br>
+      <span class="ms-3">padding-bottom:
+        <span class="text-primary">3vh;</span></span><br>
+      <span class="text-secondary">}</span>      <br>
+      <br>
+      <span class="text-dark">.py-vh-3 {</span><br>
+      <span class="ms-3">padding-top:
+        <span class="text-primary">6vh;</span></span><br>
+      <span class="ms-3">padding-bottom:
+        <span class="text-primary">6vh;</span></span><br>
+      <span class="text-secondary">}</span>
+    </code>
+  </div>
+</div>
+
+</div>
+<div class="col-lg-5">
+<h4 class="my-2">Easy to understand, easy to maintain.</h4>
+<p class="text-muted">Lorem, ipsum dolor sit  adipisicing elit. Minus culpa, voluptatibus ex itaque, sapiente a consequatur inventore beatae.</p>
+<a href="#" class="text-decoration-none link-primary">Learn more
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+<path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
+</svg>
+</a>
+<hr class="my-4">
+<h4 class="my-2">Build by developer for developers</h4>
+<p class="text-muted">Lorem, ipsum dolor sit  adipisicing elit. Minus culpa, voluptatibus ex itaque, sapiente a consequatur inventore beatae.</p>
+<a href="#" class="text-decoration-none link-primary">Learn more
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+<path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
+</svg>
+</a>
+</div>
+
+  </div>
+  <div class="row py-vh-4">
+      <div class="col-12 col-lg-6" data-aos="fade-left">
+  <span class="text-primary fs-5">Our services</span>
+  <h3 class="display-5 fw-bold">We offer anything you need. Now.</h3>
+  <p>Okay, basically we offer just some Crypto, Web3 and NFT App stuff we don´t understand. Buts thats fine becasue no one else understands it either</p>
+  <a href="#" class="text-decoration-none link-primary">All services
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+    </svg>
+  </a>
+</div>
+<div class="col-12 col-lg-6 border-start" data-aos="fade-right" data-aos-delay="200">
+  <ul class="list-unstyled">
+    <li>
+      <a class="link-primary text-decoration-none fs-5 py-3 border-bottom d-block" href="#">100% uptime <span class="fs-6">(on monday)</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right float-end" viewBox="0 0 16 16">
+<path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+</svg>
+      </a>
+    </li>
+    <li>
+      <a class="link-primary text-decoration-none fs-5 py-3 border-bottom d-block" href="#">Professional support <span class="fs-6">(on thursday)</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right float-end" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+      </svg>
+      </a>
+    </li>
+
+    <li>
+      <a class="link-primary text-decoration-none fs-5 py-3 border-bottom d-block" href="#">Enterprise SLA  <span class="fs-6">(on wednesday)</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right float-end" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+      </svg>
+      </a>
+    </li>
+    <li>
+      <a class="link-primary text-decoration-none fs-5 py-3 border-bottom d-block" href="#">24/7 Customer Support <span class="fs-6">(between 3pm - 5pm)</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right float-end" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+      </svg>
+      </a>
+    </li>
+</ul></div>
+
+  </div>
+  <div class="row py-vh-4">
+      <div class="col-md-6 col-lg-4 border-end" data-aos="fade-up">
+  <div class="d-flex">
+    <div class="col-md-3 flex-fill pt-3 pe-3 pe-md-0">
+      <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" class="bi bi-box-seam" viewbox="0 0 16 16">
+        <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2l-2.218-.887zm3.564 1.426L5.596 5 8 5.961 14.154 3.5l-2.404-.961zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923l6.5 2.6zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464L7.443.184z"/>
+      </svg>
+    </div>
+    <div class="col-md-9 flex-fill">
+      <h3 class="h5 my-2">Delivery Service</h3>
+      <p>If we had any physical goods we would deliver them to your door steps. Of course in time and to the right adress. But we have no products...</p>
+    </div>
+  </div>
+</div>
+<div class="col-md-6 col-lg-4 border-end" data-aos="fade-up" data-aos-delay="200">
+  <div class="d-flex">
+    <div class="col-md-3 flex-fill pt-3 pt-3 pe-3 pe-md-0">
+      <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" class="bi bi-card-checklist" viewbox="0 0 16 16">
+        <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
+        <path d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0zM7 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z"/>
+      </svg>
+    </div>
+    <div class="col-md-9 flex-fill">
+      <h3 class="h5 my-2">Independently Checked</h3>
+      <p>Maybe we would do something to ensure that you get what you ordered. But you can´t order anything here, so we can give you a 100% gurantee that anything would be great!</p>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+  <div class="d-flex">
+    <div class="col-md-3 flex-fill pt-3 pt-3 pe-3 pe-md-0">
+      <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" class="bi bi-window-sidebar" viewbox="0 0 16 16">
+        <path d="M2.5 4a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm2-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm1 .5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"/>
+        <path d="M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v2H1V3a1 1 0 0 1 1-1h12zM1 13V6h4v8H2a1 1 0 0 1-1-1zm5 1V6h9v7a1 1 0 0 1-1 1H6z"/>
+      </svg>
+    </div>
+    <div class="col-md-9 flex-fill">
+      <h3 class="h5 my-2">Online Support</h3>
+      <p>Okay, we have this crazy online support form. Fill it out and the content will be mailed to you as PDF. Print it out. Than send it via Fax to our super duper hidden Fax number.</p>
+    </div>
+  </div>
+</div>
+
+  </div>
+  <div class="row py-vh-4">
+      <div class="col-md-4">
+  <h2>Things we do</h2>
+  <p class="lead">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+</div>
+<div class="col-md-4">
+
+  <h4>
+    <small>01.</small>
+    <br>Strategic Design</h4>
+  <div class="d-inline float-end ms-4 mb-4 mt-2">
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-columns-gap" viewBox="0 0 16 16">
+      <path d="M6 1v3H1V1h5zM1 0a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1H1zm14 12v3h-5v-3h5zm-5-1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-5zM6 8v7H1V8h5zM1 7a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H1zm14-6v7h-5V1h5zm-5-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1h-5z"/>
+    </svg>
+  </div>
+  <p>
+
+    Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+  </p>
+  <p>
+    <a href="#" class="text-decoration-none">Learn more
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewbox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+      </svg>
+    </a>
+  </p>
+
+  <h4 class="pt-5">
+    <small>03.</small>
+    <br>UX Audits</h4>
+    <div class="d-inline float-end ms-4 mb-4 mt-2">
+      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-bar-chart-line" viewBox="0 0 16 16">
+  <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2zm1 12h2V2h-2v12zm-3 0V7H7v7h2zm-5 0v-3H2v3h2z"/>
+</svg>
+    </div>
+  <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+  </p>
+  <p>
+    <a href="#" class="text-decoration-none">Learn more
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewbox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+      </svg>
+    </a>
+  </p>
+</div>
+<div class="col-md-4">
+  <h4>
+    <small>02.</small>
+    <br>Web Development</h4>
+    <div class="d-inline float-end ms-4 mb-4 mt-2">
+      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-card-list" viewBox="0 0 16 16">
+        <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
+        <path d="M5 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 5 8zm0-2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0 5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-1-5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zM4 8a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm0 2.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
+      </svg>
+    </div>
+  <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+  <p>
+    <a href="#" class="text-decoration-none">Learn more
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewbox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+      </svg>
+    </a>
+  </p>
+
+  <h4 class="pt-5">
+    <small>04.</small>
+    <br>Magic Consulting</h4>
+    <div class="d-inline float-end ms-4 mb-4 mt-2">
+      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
+        <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"/>
+        <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"/>
+      </svg>
+    </div>
+  <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+  </p>
+  <p>
+    <a href="#" class="text-decoration-none">Learn more
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewbox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+      </svg>
+    </a>
+  </p>
+</div>
+
+  </div>
+  <div class="row py-vh-4">
+      
+<div class="row d-flex justify-content-between align-items-center">
+  <div class="col-lg-6">
+  <div class="row gx-5 d-flex">
+    <div class="col-md-11">
+      <div class="shadow ratio ratio-16x9 rounded bg-cover bp-center align-self-end" data-aos="fade-right" style="background-image: url(img/webp/people15.webp);--bs-aspect-ratio: 50%;">
+      </div>
+    </div>
+    <div class="col-md-5 offset-md-1">
+      <div class="shadow ratio ratio-1x1 rounded bg-cover mt-5 bp-center float-end" data-aos="fade-up" style="background-image: url(img/webp/interior42.webp);">
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="col-12 shadow ratio rounded bg-cover mt-5 bp-center" data-aos="fade-left" style="background-image: url(img/webp/people4.webp);--bs-aspect-ratio: 150%;">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-lg-4">
+  <h3 class="py-5 border-top border-dark" data-aos="fade-left">We did some interesting stuff in our field of work. For example we collect a lot of these free photos and use them on our website.</h3>
+  <p data-aos="fade-left" data-aos-delay="200">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+  </p>
+  <p>
+    <a href="#" class="link-fancy link-primary" data-aos="fade-left" data-aos-delay="400">Learn more
+    </a>
+  </p>
+</div>
+</div>
+
+  </div>
+  <div class="row py-vh-4 d-fex justify-content-center">
+      
+
+<div class="row gx-5 d-flex justify-content-center align-items-center">
+  <div class="col-md-4">
+    <div class="aos-init aos-animate shadow ratio ratio-16x9 rounded bg-cover bp-center align-self-end ms-4" data-aos="fade-up" data-aos-duration="1500" style="background-image: url(/img/54b43bcd-500.jpeg);--bs-aspect-ratio: 50%;"></div>
+    <div class="aos-init aos-animate shadow ratio ratio-4x3 rounded bg-cover bp-center float-end mt-4" data-aos="fade-up" data-aos-duration="1500" style="background-image: url(/img/3d0e1f57-500.jpeg);"></div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="aos-init aos-animate shadow ratio rounded bg-cover bp-center" data-aos="fade-up" data-aos-duration="1500" style="background-image: url(/img/9a6ef2b4-768.jpeg);--bs-aspect-ratio: 150%;"></div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="aos-init aos-animate shadow ratio ratio-4x3 rounded bg-cover bp-center float-end" data-aos="fade-up" data-aos-duration="1500" style="background-image: url(/img/8ab1d47-500.jpeg);"></div>
+  </div>
+</div>
+<div class="row mt-5">
+  <div class="col-12 col-lg-8 col-xl-4 bg-white py-5">
+    <p class="lead">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+    </p>
+    <p>
+      <a href="#" class="text-decoration-none link-primary">Learn more about us
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewbox="0 0 16 16">
+          <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+        </svg>
+      </a>
+    </p>
+  </div>
+</div>
+
+  </div>
+  <div class="row">
+      <div class="container-fluid">
+  <div class="row overflow-scroll">
+    <div class="col-12">
+      <div class="row vw-100 px-0 py-vh-5 d-flex align-items-center scrollx">
+        <div class="col-md-2" data-aos="fade-up">
+            <img src="img/webp/interior37.webp" class="rounded shadow img-fluid" alt="nice gallery image" width="512" height="341">
+        </div>
+
+        <div class="col-md-2" data-aos="fade-up" data-aos-delay="200">
+            <img src="img/webp/people1.webp" class="img-fluid rounded shadow" alt="nice gallery image" width="1164" height="776">
+        </div>
+
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="400">
+            <img src="img/webp/people2.webp" class="img-fluid rounded shadow" alt="nice gallery image" width="844" height="1054">
+        </div>
+
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="600">
+            <img src="img/webp/interior29.webp" class="img-fluid rounded shadow" alt="nice gallery image" width="844" height="562">
+        </div>
+
+        <div class="col-md-2" data-aos="fade-up" data-aos-delay="800">
+            <img src="img/webp/people23.webp" class="rounded shadow img-fluid" alt="nice gallery image" width="512" height="341">
+        </div>
+      </div>
+    </div>
+   </div>
+ </div>
+
+  </div>
+  <div class="row py-vh-4">
+      <div class="grouped-inputs border p-2 bg-light">
+  <div class="row">
+    <div class="col-12 col-md">
+      <form class="form-floating">
+        <input type="email" class="form-control p-3" id="floatingInput" placeholder="name@example.com">
+        <label for="floatingInput">Email address</label>
+      </form>
+    </div>
+    <div class="col-12 col-md-auto mt-2 mt-md-0">
+      <button class="btn btn-primary py-3 px-5 w-100" aria-label="Subscribe to our newsletter">Subscribe</button>
+    </div>
+  </div>
+</div>
+
+  </div>
+  <div class="row py-vh-4">
+      <div class="grouped-inputs border bg-light p-2">
+  <div class="row">
+    <div class="col">
+      <form class="form-floating">
+        <input type="email" class="form-control p-3" id="floatingInput" placeholder="name@example.com">
+        <label for="floatingInput">Email address</label>
+      </form>
+    </div>
+    <div class="col-auto">
+      <a href="#" class="btn btn-primary py-3 px-5">Subscribe</a>
+    </div>
+  </div>
+</div>
+
+  </div>
+  <div class="row py-vh-4">
+      <div class="col-4 d-flex justify-content-between border shadow p-4 rounded">
+  <div class="row">
+    <div class="col-md-4 position-relative">
+      <img src="/img/person2.jpg" class="img-fluid rounded-circle">
+      <span class="position-absolute top-0 end-25 translate-middle px-1 bg-info border border-light rounded-circle text-white mt-4">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2" viewbox="0 0 16 16">
+          <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+        </svg>
+      </span>
+    </div>
+    <div class="col">
+      <h5 class="m-0">John Doe</h5>
+      <span class="text-muted fst-italic">"Similique quisquam debitis corrupti deserunt, dolor."</span><br>
+      <span class="fs-6"><span class="text-warning">4.5</span>
+        <span class="text-warning">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-star-fill" viewbox="0 0 20 20">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+          </svg>
+        </span>
+
+        <span class="text-muted">Overall Rating</span>
+      </span>
+          </div>
+      <div class="col-12">
+        <div class="border-top row mt-3 border-bottom mb-3 g-0">
+          <div class="col">
+            <div class="pe-1 ps-2 py-3">
+              <h5 class="mb-0">9.828</h5>
+              <span>Lines of code</span>
+            </div>
+          </div>
+          <div class="col border-start">
+            <div class="pe-1 ps-3 py-3">
+              <h5 class="mb-0">41</h5>
+              <span>Commits</span>
+            </div>
+          </div>
+          <div class="col border-start">
+            <div class="pe-1 ps-3 py-3">
+              <h5 class="mb-0">18</h5>
+              <span>PR´s today</span>
+            </div>
+          </div>
+        </div>
+      </div>
+<div class="col-12">
+  <p>Lorem, ipsum dolor sit adipisicing elit. Minus culpa, voluptatibus ex itaque, sapiente a consequatur inventore beatae, ipsam debitis omnis consequuntur iste asperiores. Similique quisquam debitis corrupti deserunt, dolor.</p>
+</div>
+  </div>
+</div>
+
+  </div>
+  <div class="row py-vh-4">
+      <div class="row">
+  <div class="col-12 py-3 text-center">
+    <span class="fs-5">One Simple Pricing:</span>
+  </div>
+</div>
+<div class="row d-flex align-items-stretch border rounded shadow">
+  <div class="col-6 bg-light p-5 d-flex align-items-center">
+    <ul class="list-unstyled">
+      <li class="border-bottom py-2 my-1">
+        <span class="text-dark me-1">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewbox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+          </svg>
+        </span>
+        HTTPS-enabled
+        <span class="rounded p-1 bg-white fw-bold">Custom Domains</span></li>
+      <li class="border-bottom py-2 my-1">
+        <span class="text-dark me-1">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewbox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+          </svg>
+        </span>
+        <span class="rounded p-1 bg-white">Continuous Deployment</span>
+        with Git</li>
+      <li class="border-bottom py-2 my-1">
+        <span class="text-dark me-1">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewbox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+          </svg>
+        </span>
+        High-performance
+        <span class="rounded p-1 bg-white">Edge Network</span></li>
+      <li class="border-bottom py-2 my-1">
+        <span class="text-dark me-1">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewbox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+          </svg>
+        </span>
+        Unlimited
+        <span class="rounded p-1 bg-white">Websites & APIs</span></li>
+      <li class="py-2 my-1">
+        <span class="text-dark me-1">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewbox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+          </svg>
+        </span>
+        <span class="rounded p-1 bg-white">Serverless Functions</span>
+        in Node.js, Go, and more</li>
+    </ul>
+  </div>
+  <div class="col-6 p-5 text-center d-flex align-items-center justify-content-center border-start bg-white">
+    <div>
+      <h1 class="display-1">
+        <span class="fs-1">$</span><span class="fw-bold">5</span><span class="fs-3 text-secondary">/mo</span></h1>
+      <a href="#" class="btn btn-primary btn-lg px-5 py-3 shadow mb-3 fs-6 rounded-pill">Get startet free</a>
+      <p class="text-muted">No credit card required</p>
+    </div>
+  </div>
+</div>
+<div class="text-center mt-4">
+  <a href="#" class="text-decoration-none link-primary">See more details
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewbox="0 0 16 16">
+      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+    </svg>
+  </a>
+</div>
+
+  </div>
+  <div class="row py-vh-4">
+      <div class="row text-center d-flex justify-content-center gx-0">
+  <div class="col-lg-4 mb-4 mt-5">
+    <div class="card py-5 shadow border-0" data-aos="fade-right">
+      <div class="card-body px-5">
+        <h3 class="card-title">Beginners</h3>
+        <small>$</small>
+        <span class="display-3 fw-bold">12</span>
+        <small>/mo</small><br>
+        <small class="text-muted">Billed annually</small>
+        <div class="d-grid">
+          <a href="#" class="btn btn-outline-primary btn-lg mt-3">Get started</a>
+        </div>
+        <div class="card-text">
+          <ul class="checked py-4 text-start list-unstyled">
+            <li class="py-2 border-bottom">
+              <span class="me-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+  <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+</svg>
+</span>
+              Facilisis in pretium nisl aliquet</li>
+            <li class="py-2 border-bottom">
+              <span class="me-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+  <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+</svg>
+</span>Nulla volutpat aliquam velit</li>
+            <li class="py-2 border-bottom">
+              <span class="me-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+  <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+</svg>
+</span>Faucibus porta lacus fringilla vel</li>
+            <li class="py-2 border-bottom">
+              <span class="me-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+  <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+</svg>
+</span>Aenean sit amet erat nunc</li>
+            <li class="py-2 border-bottom">
+              <span class="me-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+  <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+</svg>
+</span>Eget porttitor lorem fringilla</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-5" data-aos="fade-left">
+    <div class="card border-0 py-5 bg-dark text-white rounded shadow">
+      <div class="card-body px-5">
+        <span class="badge bg-success my-3">Best buy</span>
+        <h2 class="card-title fs-1">Professionals</h2>
+        <small>$</small>
+        <span class="display-1 fw-bold">24</span>
+        <small>/mo</small><br>
+        <small class="text-light">Billed annually</small>
+        <div class="d-grid">
+          <a href="#" class="btn btn-primary btn-xl mt-3">Get started</a>
+        </div>
+
+        <div class="card-text">
+          <ul class="py-3 text-start list-unstyled">
+            <li class="py-3 border-bottom border-secondary">
+              <span class="me-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+  <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+</svg>
+</span>Lorem ipsum dolor sit amet etiam porta sem</li>
+            <li class="py-3 border-bottom border-secondary">
+              <span class="me-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+  <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+</svg>
+</span>Consectetur adipiscing elit etiam porta sem</li>
+            <li class="py-3 border-bottom border-secondary">
+              <span class="me-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+  <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+</svg>
+</span>Integer molestie etiam porta sem lorem at massa</li>
+            <li class="py-3 border-bottom border-secondary">
+              <span class="me-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+  <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+</svg>
+</span>Facilisis in pretium nisl aliquet</li>
+            <li class="py-3 border-bottom border-secondary">
+              <span class="me-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+  <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+</svg>
+</span>Nulla volutpat aliquam velit</li>
+            <li class="py-3 border-bottom border-secondary">
+              <span class="me-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+  <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+</svg>
+</span>Faucibus porta lacus fringilla vel etiam porta sem</li>
+            <li class="py-3 border-bottom border-secondary">
+              <span class="me-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+  <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+</svg>
+</span>Aenean sit amet erat nunc</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+  <div class="row py-vh-4">
+      <div class="row text-center gx-3 d-flex align-items-top">
+          <div class="col mb-4">
+            <div class="card py-5 aos-init aos-animate bg-white" data-aos="fade-right" data-aos-duration="1200">
+              <div class="card-body">
+                <h3 class="card-title">Starter</h3>
+                <small>$</small><span class="display-3 fw-bold">5</span><small>/mo</small><br>
+                <small class="text-muted">Billed annually</small>
+
+                <div class="card-text">
+                  <ul class="checked py-4 px-sm-2 px-lg-4 text-start list-unstyled">
+                    <li class="py-2 border-bottom">Facilisis in pretium nisl aliquet</li>
+                    <li class="py-2 border-bottom">Nulla volutpat aliquam velit</li>
+                    <li class="py-2 border-bottom">Faucibus porta lacus fringilla vel etiam</li>
+                  </ul>
+                </div>
+                <a href="#" class="btn mt-3 px-3 btn-primary">Buy now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col mb-4">
+            <div class="card py-5 aos-init aos-animate shadow" data-aos="fade-right" data-aos-duration="1200">
+              <div class="card-body">
+                <h3 class="card-title">Beginners</h3>
+                <small>$</small><span class="display-3 fw-bold">12</span><small>/mo</small><br>
+                <small class="text-muted">Billed annually</small>
+
+                <div class="card-text mt-3">
+                  <ul class="checked py-4 px-sm-2 px-lg-4 text-start list-unstyled">
+                    <li class="py-2 border-bottom">Facilisis in pretium nisl aliquet</li>
+                    <li class="py-2 border-bottom">Nulla volutpat aliquam velit</li>
+                    <li class="py-2 border-bottom">Faucibus porta lacus fringilla vel etiam</li>
+                    <li class="py-2 border-bottom">Aenean sit amet erat nunc</li>
+                  </ul>
+                </div>
+                <a href="#" class="btn btn-lg mt-3 px-4 btn-primary">Buy now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="card border-0 py-5 aos-init aos-animate bg-dark text-white rounded border bg-dark rounded shadow" data-aos="fade-up" data-aos-duration="1600">
+              <div class="card-body">
+                <span class="badge bg-success my-3">Best buy</span>
+                <h2 class="card-title fs-1">Professionals</h2>
+                <small>$</small><span class="display-1 fw-bold">24</span><small>/mo</small><br>
+                <small class="text-muted">Billed annually</small>
+
+                <div class="card-text mt-3">
+                  <ul class="py-3 px-sm-2 px-lg-4 text-start list-unstyled">
+                    <li class="py-3 border-bottom">Lorem ipsum dolor sit amet etiam porta sem</li>
+                    <li class="py-3 border-bottom">Consectetur adipiscing elit etiam porta sem</li>
+                    <li class="py-3 border-bottom">Integer molestie etiam porta sem lorem at massa</li>
+                    <li class="py-3 border-bottom">Facilisis in pretium nisl aliquet</li>
+                    <li class="py-3 border-bottom">Nulla volutpat aliquam velit</li>
+                  </ul>
+                </div>
+                <a href="#" class="btn btn-primary btn-xl mt-3">Buy now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+  </div>
+  <div class="row py-vh-4">
+      <div class="col-12 bg-light p-5 border rounded shadow">
+  <h2 class="fw-bold display-5 mb-4">Join the best!</h2>
+  <div class="col-12">
+    <div class="form-floating mb-3">
+      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+      <label for="floatingInput">Email address</label>
+    </div>
+    <div class="form-floating mb-3">
+      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+      <label for="floatingPassword">Password</label>
+    </div>
+    <div class="form-floating">
+      <input type="password" class="form-control" id="floatingPasswordretype" placeholder="Password Retype">
+      <label for="floatingPassword">Password Retype</label>
+    </div>
+    <div class="d-grid">
+      <button class="btn btn-primary btn-lg mt-4 py-3 shadow fw-light" type="button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-envelope float-start mt-1" viewbox="0 0 16 16">
+          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+        </svg>
+        Join now!</button>
+    </div>
+
+    <div class="text-center mt-3">
+      <a href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewbox="0 0 16 16">
+          <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+        </svg>
+        Other Sign Up Options
+      </a>
+    </div>
+    <div class="text-center pt-4 mt-4 border-top">
+      <p>Already have an account?
+        <a href="#">Log in</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+  </div>
+  <div class="row py-vh-4">
+      <div class="col-12 border p-5 bg-white rounded shadow">
+  <h2 class="fw-bold display-5 mb-4">Join the best!</h2>
+  <div class="col-12">
+    <div class="form-floating mb-3">
+      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+      <label for="floatingInput">Email address</label>
+    </div>
+    <div class="form-floating mb-3">
+      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+      <label for="floatingPassword">Password</label>
+    </div>
+    <div class="form-floating">
+      <input type="password" class="form-control" id="floatingPasswordretype" placeholder="Password Retype">
+      <label for="floatingPassword">Password Retype</label>
+    </div>
+    <div class="d-grid">
+      <button class="btn btn-primary btn-lg mt-4 btn-xl fw-light" type="button">
+        Join now!</button>
+    </div>
+
+    <div class="text-center pt-4 mt-4 border-top">
+      <p>Already have an account?
+        <a href="#" class="link-primary">Log in</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+  </div>
+  <div class="row py-vh-4">
+      <div class="row d-flex align-items-center">
+    <div class="col-lg-6">
+      <div class="row gx-4">
+        <div class="col-5 aos-init aos-animate mt-5" data-aos="fade-right" data-aos-duration="500">
+          <img src="/img/person4.jpg" class="img-fluid shadow rounded">
+        </div>
+        <div class="col-7">
+          <div class="row gx-4">
+            <div class="col-12 aos-init aos-animate" data-aos="fade-down" data-aos-duration="1000">
+              <img src="/img/person1.jpg" class="img-fluid shadow rounded">
+            </div>
+            <div class="col-7 mt-4 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1500">
+              <img src="/img/person2.jpg" class="img-fluid shadow rounded">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-5 offset-lg-1">
+      <span class="text-primary">Our concept explained</span>
+      <h2 class="mt-2 mb-4">We are here to help you out!</h2>
+      <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+      </p>
+      <p>
+        <a href="#" class="text-decoration-none link-primary">Learn more
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+          </svg>
+        </a>
+      </p>
+    </div>
+  </div>
+
+  </div>
+  <div class="row py-vh-4">
+      <div class="col">
+  <span class="fs-6">Trusted by:</span>
+</div>
+<div class="col opacity-50" data-aos="fade-up" data-aos-duration="250">
+  <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-bootstrap-fill" viewBox="0 0 16 16">
+<path d="M6.375 7.125V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375v2.725z"/>
+<path d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4h-8zm1.06 12V3.545h3.399c1.587 0 2.543.809 2.543 2.11 0 .884-.65 1.675-1.483 1.816v.1c1.143.117 1.904.931 1.904 2.033 0 1.488-1.084 2.396-2.888 2.396H5.062z"/>
+</svg>
+</div>
+
+<div class="col opacity-50" data-aos="fade-up" data-aos-duration="500">
+  <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+  </svg>
+</div>
+
+<div class="col opacity-50" data-aos="fade-up" data-aos-duration="750">
+  <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16">
+    <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
+  </svg>
+</div>
+
+<div class="col opacity-50" data-aos="fade-up" data-aos-duration="1000">
+  <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-twitch" viewBox="0 0 16 16">
+    <path d="M3.857 0 1 2.857v10.286h3.429V16l2.857-2.857H9.57L14.714 8V0H3.857zm9.714 7.429-2.285 2.285H9l-2 2v-2H4.429V1.143h9.142v6.286z"/>
+    <path d="M11.857 3.143h-1.143V6.57h1.143V3.143zm-3.143 0H7.571V6.57h1.143V3.143z"/>
+  </svg>
+</div>
+
+<div class="col opacity-50" data-aos="fade-up" data-aos-duration="1250">
+  <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+  </svg>
+</div>
+
+  </div>
+  <div class="row py-vh-4 d-flex justify-content-center">
+      <div class="col-lg-10 col-xl-8">
+  <blockquote class="text-center">
+    <img src="/img/person1.jpg" width="64" class="img-fluid rounded-circle" data-aos="fade-up" data-aos-duration="250">
+    <h4 class="fs-1 my-3 fw-light" data-aos="fade">“Wow. Thats the only thing I can say. Just wow. Oh and thank you of course!”</h4>
+    <footer class="blockquote-footer mt-2" data-aos="fade-up" data-aos-duration="500">
+      <span><span class="fw-bold">Jane Doe,</span>
+        UX Engineer at Github</span>
+    </footer>
+  </blockquote>
+</div>
+
+  </div>
+  <div class="py-vh-4 d-flex justify-content-between">
+      <div class="col-lg-5">
+  <h3 class="py-5 border-top border-dark" data-aos="fade-right">What our clients say</h3>
+</div>
+<div class="col-md-7" data-aos="fade-left">
+  <blockquote>
+    <div class="fs-4 my-3 fw-light pt-4 border-bottom pb-3">“I´am the CEO of this company. So maybe you think "he will tell us something super awesome about it only". But no. Its a really strange place to work with creepy people all around.
+      They do some computer stuff I don´t understand. But I wear expensive Glasses and a Patagonia Hoodie. So I´am fine with it.”</div>
+    <img src="img/webp/person11.webp" width="64" height="64" class="img-fluid rounded-circle me-3" alt="" data-aos="fade">
+    <span><span class="fw-bold">John Doe,</span>
+      CEO of Stride Ltd.</span>
+  </blockquote>
+</div>
+
+  </div>
+</div>
+
+    </main>
+
+    <footer>
+  <div class="container small border-top">
+    <div class="row py-5 d-flex justify-content-between">
+
+<div class="col-12 col-lg-6 col-xl-3 border-end p-5">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-layers-half" viewbox="0 0 16 16">
+    <path d="M8.235 1.559a.5.5 0 0 0-.47 0l-7.5 4a.5.5 0 0 0 0 .882L3.188 8 .264 9.559a.5.5 0 0 0 0 .882l7.5 4a.5.5 0 0 0 .47 0l7.5-4a.5.5 0 0 0 0-.882L12.813 8l2.922-1.559a.5.5 0 0 0 0-.882l-7.5-4zM8 9.433 1.562 6 8 2.567 14.438 6 8 9.433z"/>
+  </svg>
+  <address class="text-secondary mt-3">
+    <strong>Stride, Inc.</strong><br>
+    1355 Market St, Suite 900<br>
+    San Francisco, CA 94103<br>
+    <abbr title="Phone">P:</abbr>
+    (123) 456-7890
+  </address>
+</div>
+<div class="col-12 col-lg-6 col-xl-3 border-end p-5">
+  <h3 class="h6 mb-3">Company</h3>
+  <ul class="nav flex-column">
+    <li class="nav-item">
+      <a class="nav-link link-secondary ps-0" aria-current="page" href="#">Lorem ipsum</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link link-secondary ps-0" href="#">Dolor sitam est</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link link-secondary ps-0" href="#">Sed odio cras</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link link-secondary ps-0" href="#">Commodo tortor ac</a>
+    </li>
+  </ul>
+</div>
+<div class="col-12 col-lg-6 col-xl-3 border-end p-5">
+  <h3 class="h6 mb-3">Products</h3>
+  <ul class="nav flex-column">
+    <li class="nav-item">
+      <a class="nav-link link-secondary ps-0" aria-current="page" href="#">Fusce dapibus est</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link link-secondary ps-0" href="#">Donec sed dui</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link link-secondary ps-0" href="#">Tortor mauris</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link link-secondary ps-0" href="#">Ut fermentum massa</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link link-secondary ps-0" href="#">Magna mollis</a>
+    </li>
+  </ul>
+</div>
+<div class="col-12 col-lg-6 col-xl-3 p-5">
+  <h3 class="h6 mb-3">Subpages</h3>
+  <ul class="nav flex-column">
+    <li class="nav-item">
+      <a class="nav-link link-secondary ps-0" aria-current="page" href="404.html">404 System Page</a>
+      <a class="nav-link link-secondary ps-0" aria-current="page" href="register.html">Register System Page</a>
+            <a class="nav-link link-secondary ps-0" aria-current="page" href="content.html">Simple Text Content Page</a>
+    </li>
+  </ul>
+</div>
+</div>
+</div>
+
+<div class="container text-center py-3 small">Made by <a href="https://templatedeck.com" class="link-fancy" target="_blank">templatedeck.com</a>
+</div>
+</footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/aos.js"></script>
+ <script>
+ AOS.init({
+   duration: 800, // values from 0 to 3000, with step 50ms
+ });
+ </script>
+
+ <script>
+  let scrollpos = window.scrollY
+  const header = document.querySelector(".navbar")
+  const header_height = header.offsetHeight
+
+  const add_class_on_scroll = () => header.classList.add("scrolled", "shadow-sm")
+  const remove_class_on_scroll = () => header.classList.remove("scrolled", "shadow-sm")
+
+  window.addEventListener('scroll', function() {
+    scrollpos = window.scrollY;
+
+    if (scrollpos >= header_height) { add_class_on_scroll() }
+    else { remove_class_on_scroll() }
+
+    console.log(scrollpos)
+  })
+</script>
+
+  </body>
+</html>
